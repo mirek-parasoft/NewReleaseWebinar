@@ -164,7 +164,11 @@ void print_empty_test_message()
     }
 }
 
-void print_error_message()
+void nuke_timers()
 {
-    printf("%s", "error");
+   int i;
+   for (i = 0; i < max_records; i++) {
+       timer_records[i] = NULL;
+
+   }
 }
