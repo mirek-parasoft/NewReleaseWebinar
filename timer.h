@@ -32,5 +32,7 @@ void format_timer_record(int, char*);
 /* display list of all timers */
 void list_timers();
 
+void nuke_timers();
+
 #endif /* _timer_h_ */
 
