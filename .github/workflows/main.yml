@@ -38,6 +38,7 @@ jobs:
       with:
         # For CMake-based projects, use a compile_commands.json file as the input for analysis. 
         input: cpptestscan.bdf
+        compilerConfig: gcc_11-aarch64
         testConfig: builtin://MISRA C 2012
         # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
         # reportFormat: xml,html,custom
