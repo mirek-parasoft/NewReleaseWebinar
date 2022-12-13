@@ -17,6 +17,17 @@ static struct timer_record* timer_records[BUF_SIZE];
 const int max_records = BUF_SIZE;
 static int curr_index = 0;
 
+
+void dummy_function()
+{
+    char * message = malloc(10);
+    if (message)  {
+    message[0] = '\0';
+    printf("%s", message);
+    free (message);
+    }
+}
+
 void init_timer()
 {
     memset(timer_records, 0, sizeof(struct timer_record*) * BUF_SIZE); 
