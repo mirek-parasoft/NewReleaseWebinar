@@ -6,11 +6,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
 #include "clock.h"
 #include "consts.h"
 #include "inout.h"
 #include "timer.h"
+
 
 
 static struct timer_record* timer_records[BUF_SIZE];
@@ -163,3 +165,14 @@ void print_empty_test_message()
     free (message);
     }
 }
+
+/*
+void nuke_timers()
+{
+   int8_t i;
+   for (i = 0; i < max_records; i++) {
+       timer_records[i] = NULL;
+
+   }
+}
+*/
