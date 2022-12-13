@@ -164,12 +164,7 @@ void print_empty_test_message()
     }
 }
 
-void print_empty_test_message_1()
+void print_error_message()
 {
-    char * message = malloc(10);
-    if (message)  {
-    message[0] = '\0';
-    printf("%s", message);
-    free (message);
-    }
+    printf("%s", "message");
 }
