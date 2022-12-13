@@ -163,3 +163,8 @@ void print_empty_test_message()
     free (message);
     }
 }
+
+void print_empty_test_message()
+{
+    printf("%s", "message");
+}
