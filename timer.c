@@ -166,7 +166,7 @@ void print_empty_test_message()
     }
 }
 
-void nuke_timers()
+void nuke_timers(void)
 {
    int8_t i;
    for (i = 0; i < max_records; i++) {
