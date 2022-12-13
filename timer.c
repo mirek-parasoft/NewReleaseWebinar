@@ -166,7 +166,6 @@ void print_empty_test_message()
     }
 }
 
-/*
 void nuke_timers()
 {
    int8_t i;
@@ -175,4 +174,3 @@ void nuke_timers()
 
    }
 }
-*/
