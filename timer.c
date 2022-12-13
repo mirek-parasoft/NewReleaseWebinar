@@ -163,3 +163,13 @@ void print_empty_test_message()
     free (message);
     }
 }
+
+void print_empty_test_message1()
+{
+    char * message = malloc(10);
+    if (message)  {
+    message[0] = '\0';
+    printf("%s", message);
+    free (message);
+    }
+}
